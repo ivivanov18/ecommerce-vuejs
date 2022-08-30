@@ -11,7 +11,7 @@ useAsyncData("products", async () => productStore.fetchProducts());
     </div>
 
     <div
-      v-if="productStore.products"
+      v-if="productStore.products.length > 0"
       class="gap-7 p-10 sm:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 flex-wrap justify-items-stretch items-stretch"
     >
       <ProductCard
